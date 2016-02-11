@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="org.usablelabs.pillreminder"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:name="org.usablelabs.pillreminder.DueDoApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="org.usablelabs.pillreminder.ListActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="org.usablelabs.pillreminder.FormActivity" />
+        <activity android:name="org.usablelabs.pillreminder.ShowActivity" />
+
+        <meta-data android:name="AA_DB_NAME" android:value="DueDu.db" />
+        <meta-data android:name="AA_DB_VERSION" android:value="1" />
+        <meta-data android:name="AA_MODELS" android:value="org.usablelabs.pillreminder.Task" />
+    </application>
+
+</manifest>

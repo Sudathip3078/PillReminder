@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">PillReminder</string>
+    <string name="tasks">บันทึกการใช้ยา</string>
+    <string name="task">รายการ</string>
+    <string name="edit">แก้ไข</string>
+    <string name="new_task">เพิ่มบันทึกการใช้ยา</string>
+    <string name="task_title">หัวข้อ</string>
+    <string name="task_date">วันที่</string>
+    <string name="task_amount">จำนวน</string>
+    <string name="task_category">ประเภท</string>
+    <string name="save">บันทึก</string>
+    <string name="task_content">รายละเอียด</string>
+    <string name="unsaved_exit_alert">คุณยังไม่ได้เก็บข้อมูล?</string>
+    <string name="name_is_required">ห้ามว่าง</string>
+    <string name="amount_is_required">ห้ามว่าง</string>
+    <string name="time_is_required">ห้ามว่าง</string>
+    <string name="date_is_required">ห้ามว่าง</string>
+    <string name="delete">ลบ</string>
+    <string name="are_you_sure">ยืนยัน?</string>
+    <string name="edit_task">แก้ไข</string>
+    <string name="no_task">ไม่มี</string>
+    <string name="name">ชื่อยา</string>
+    <string name="amount">จำนวนทั้งหมด</string>
+    <string name="time">เวลา</string>
+</resources>
