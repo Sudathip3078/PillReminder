@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.github.ben-manes.versions'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "org.usablelabs.pillreminder"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    compile('com.mikepenz:materialdrawer:4.6.4@aar') {
+        transitive = true
+    }
+    compile 'com.mikepenz:iconics-core:2.5.3@aar'
+//    compile 'com.mikepenz:google-material-typeface:2.2.0.1@aar'
+    compile 'com.mikepenz:material-design-iconic-typeface:2.2.0.1@aar'
+    compile 'com.mikepenz:fontawesome-typeface:4.5.0.1@aar'
+    compile 'com.pixplicity.easyprefs:library:1.8.1@aar'
+    compile 'com.michaelpardo:activeandroid:3.1.0-SNAPSHOT'
+}
+
+repositories {
+    jcenter()
+    maven { url "http://dl.bintray.com/pixplicity/maven" }
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+}
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.github.ben-manes:gradle-versions-plugin:0.12.0'
+    }
+}
+
