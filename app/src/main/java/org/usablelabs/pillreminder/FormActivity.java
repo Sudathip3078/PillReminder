@@ -85,17 +85,17 @@ public class FormActivity extends BaseActivity {
 
     public void onStart(){
         super.onStart();
-        EditText dateEdit=(EditText)findViewById(R.id.dateEdit);
-        dateEdit.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                if (hasFocus) {
-                    DateDialog dialog = new DateDialog(v);
-                    FragmentTransaction ft = getFragmentManager().beginTransaction();
-                    dialog.show(ft, "TimePicker");
-                }
-            }
-        });
+//        EditText dateEdit=(EditText)findViewById(R.id.dateEdit);
+//        dateEdit.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+//            @Override
+//            public void onFocusChange(View v, boolean hasFocus) {
+//                if (hasFocus) {
+//                    DateDialog dialog = new DateDialog(v);
+//                    FragmentTransaction ft = getFragmentManager().beginTransaction();
+//                    dialog.show(ft, "TimePicker");
+//                }
+//            }
+//        });
     }
 
     @Override
