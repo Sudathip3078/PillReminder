@@ -43,6 +43,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:id="@+id/surnameEdit"
+                android:inputType="number"
                 android:layout_gravity="center_horizontal"
                 android:hint="@string/amount" />
 
@@ -56,8 +57,9 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:id="@+id/dateEdit"
+                android:inputType="time"
                 android:layout_gravity="center_horizontal"
-                android:hint="@string/time" />
+                android:hint="@string/time"/>
         </android.support.design.widget.TextInputLayout>
 
     </LinearLayout>
